@@ -5,7 +5,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>ControllerServlet</servlet-name>
-    <servlet-class>ua.tania.ann.servlets.ControllerServlet</servlet-class>
+    <servlet-class>ua.tania.ann.controller.ControllerServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ControllerServlet</servlet-name>

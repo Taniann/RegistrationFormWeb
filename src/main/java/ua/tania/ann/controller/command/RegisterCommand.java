@@ -19,7 +19,9 @@ public class RegisterCommand implements Command {
         String password = request.getParameter("password");
 
         RegisteredUser newRegisteredUser = new RegisteredUser(email, phoneNumber, login, password);
-        registeredUserService.insert(newRegisteredUser);
-        return "register";
+        if (registeredUserService.insert(newRegisteredUser)) {
+                return "/home";
+        }
+        return "/register";
     }
 }

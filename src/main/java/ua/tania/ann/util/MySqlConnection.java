@@ -13,7 +13,7 @@ public class MySqlConnection {
             throws ClassNotFoundException, SQLException {
         // Note: Change the connection parameters accordingly.
         String hostName = "localhost";
-        String dbName = "registered_user";
+        String dbName = "registration_form";
         String userName = "root";
         String password = "1235";
         return getMySQLConnection(hostName, dbName, userName, password);
